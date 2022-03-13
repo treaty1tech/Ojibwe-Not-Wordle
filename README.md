@@ -1,10 +1,14 @@
-# Any-Language Wordle Clone
+# Ojibwe-Not-Wordle Clone
+
+This For has been adapted for use with the ojibwe language. Word list is generated from The [Ojibwe People's Dictionary](https://ojibwe.lib.umn.edu/)
+
+## Any-Language Wordle Clone
 
 ## Changes in this fork
 
 I've adapted this code to allow for simply adapting it to another language. The wordlist and orthography (writing system) here are for the Gitksan language, but this repository is meant to be adapted to other languages. I've also added a script for publishing on GitHub Pages.
 
-_Summary of changes_
+### Summary of changes
 
 - Allow letters in the "orthography.ts" to be digraphs or multigraphs (letters that are more than one character)
 - Allow more or less atempts than 6
@@ -16,7 +20,7 @@ _Summary of changes_
 - Use BC Sans open source font to better render Indigenous language orthographies in BC, Canada. See the blog to change the font
 - Complete localization/translateability of the interface using react-i18next
 
-_To adapt for your language (the basics):_
+### To adapt for your language (the basics)
 
 1. Change the file in `src/constants/orthography.ts` to use your language's writing system.
 2. Change the file in `src/constants/wordlist.ts` to use your language's words.
@@ -26,7 +30,7 @@ _To adapt for your language (the basics):_
 
 For more information, including how to localize the interface to your language, visit the blog article: https://blog.mothertongues.org/wordle/.
 
-The interface is translated by default in both English and Spanish - other translations are very welcome! 
+The interface is translated by default in both English and Spanish - other translations are very welcome!
 
 Thanks to Carolyn O'Meara (https://github.com/ckomeara) for providing the Spanish translation.
 
@@ -54,6 +58,7 @@ I implemented Tailwind mostly because I wanted to learn how to use Tailwind CSS,
 
 _To Run Locally:_
 Clone the repository and perform the following command line actions:
+
 ```bash
 $ cd wordle
 $ npm install
@@ -61,9 +66,10 @@ $ npm run start
 ```
 
 _To build/run docker container:_
+
 ```bash
 $ docker build -t notwordle .
 $ docker run -d -p 3000:3000 notwordle
 ```
-open http://localhost:3000 in browser.
 
+open http://localhost:3000 in browser.
